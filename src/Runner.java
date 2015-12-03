@@ -6,7 +6,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class Lab11avst
+public class Runner
 {
     public static void main(String[] args)
     {
@@ -36,9 +36,10 @@ public class Lab11avst
         System.out.println("\n\nPRIMES BETWEEN 1 AND "+ primes.length);
         System.out.println();
         computePrimes(primes);
+        DecimalFormat input = new DecimalFormat("0000");
         for(int k = 2; k < primes.length; k++){
             if(primes[k] == true){
-                System.out.print(k + " ");
+                System.out.print(input.format(k) + " ");
             }
         }
     }
